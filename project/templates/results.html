@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Results</h1>
+        <p>{{ name }}:</p>
+        <p>BMI is {{ bmi }}: {{ classification }}</p>
+        <p>{{ body_fat_message }}</p>
+        <p>Overall: {{ recommendation }}</p>
+        <p>Estimated daily calories: {{ daily_calories }} kcal/day</p>
+        <a href="/" class="button">Back</a>
+    </div>
+</body>
+</html>
